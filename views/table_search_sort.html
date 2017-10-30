@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>Test Results</title>
+<link href="./../css/table_search_sort.css" rel="stylesheet">
+<script src="./../js/table_search.js"></script>
+<script src="./../js/table_sort.js"></script>
+</head>
+<body>
+<div align="center">
+    <img alt="Home" src="./../images/home.png" onclick="location.href='./../index.html'" title="Home"></img>
+</div>
+<input type="text" id="myInput" onkeyup="myFunction(event)" placeholder="Search for test case name..">
+<table id="myTable" border ='1'><tr class="header">
+<th style="width:5%;" onclick="sortTable(0)">Test Case #</th>
+<th style="width:20%;" onclick="sortTable(1)">Test Case Name</th>
+<th style="width:5%;" onclick="sortTable(2)">Machine</th>
+<th style="width:5%;" onclick="sortTable(3)">Browser</th>
+<th style="width:10%;" onclick="sortTable(4)">Run Date Time</th>
+<th style="width:5%;" onclick="sortTable(5)">Run Duration (HH:MM:SS)</th>
+<th style="width:10%;" onclick="sortTable(6)">Test Result</th>
+<th style="width:40%;" onclick="sortTable(7)">Test Failure Reason</th>
+</tr>
+<tr><td>1</td><td>Login</td><td>WINDOWS</td><td>CHROME</td><td>10/27/2017 11:05:04 IST</td><td>00:00:02</td><td>PASS</td><td></td></tr>
+<tr><td>2</td><td>Logout</td><td>WINDOWS</td><td>CHROME</td><td>10/27/2017 11:05:19 IST</td><td>00:00:04</td><td>PASS</td><td></td></tr>
+</table>
+</body>
+</html>
